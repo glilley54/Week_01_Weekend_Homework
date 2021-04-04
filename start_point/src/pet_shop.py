@@ -12,7 +12,7 @@
         #name = get_pet_shop_name(self.cc_pet_shop)
         #self.assertEqual("Camelot of Pets", name)
 
-        #OUR FUNCTION:
+#OUR FUNCTION:
 #1 FUNCTION NAME IS pet_shop_name so we need to define function called this.
 #2we need get pet shop name so search lists 
 #we need to retun the pet shop name Camelot of Pets  
@@ -41,7 +41,7 @@ def get_total_cash(pet_shop):
 def add_or_remove_cash(pet_shop,addional_cash):
     pet_shop["admin"]["total_cash"] += addional_cash
 
-    #FUNCTION 4 = function 3 will pass this test
+#FUNCTION 4 = function 3 will pass this test
 
 #function 5
 
@@ -141,4 +141,22 @@ def get_customer_cash(customers):
 def remove_customer_cash(customers,cash):
     customers["cash"] -= cash
 
-   
+#function 16
+ 
+
+def get_customer_pet_count(customers):
+    count = len(customers["pets"])
+    return count
+
+#function 17
+
+#def test_add_pet_to_customer(self):
+    #customer = self.customers[0]
+    #add_pet_to_customer(customer, self.new_pet)
+    #self.assertEqual(1, get_customer_pet_count(customer))
+
+def add_pet_to_customer(customers,new_pet):
+    customers["pets"].append(new_pet)
+
+
+
