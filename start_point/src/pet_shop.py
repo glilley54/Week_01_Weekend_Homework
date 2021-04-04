@@ -72,6 +72,35 @@ def get_stock_count(pet_shop):
     count = len(pet_shop["pets"])
     return count
 
+#function 8
+
+#def test_all_pets_by_breed__found(self):
+        #pets = get_pets_by_breed(self.cc_pet_shop, "British Shorthair")
+        #self.assertEqual(2, len(pets))
+
+
+
+def get_pets_by_breed(pet_shop, breed):
+    number_to_find = []
+    for pet in pet_shop["pets"]:
+        if pet["breed"] == breed:
+            number_to_find.append(breed)
+    return number_to_find
+
+
+#Function 9
+
+
+#function 10
+
+   #def test_find_pet_by_name__returns_pet(self):
+        #pet = find_pet_by_name(self.cc_pet_shop, "Arthur")
+        #self.assertEqual("Arthur", pet["name"])
+
+def find_pet_by_name(pet_shop, pet_name):
+    for pet in pet_shop["pets"]:
+        if pet["name"] == pet_name:
+            return pet
 
 
 
